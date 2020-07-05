@@ -8,6 +8,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     background-color: #EAEAEA;
     position: relative;
+    overflow-x: hidden;
 }
 
 a{
@@ -63,6 +64,9 @@ footer {
 section{
     display: block;
 }
+/* *{
+    border: 2px solid red;
+} */
 
 
 

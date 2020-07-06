@@ -7,6 +7,7 @@ html{
 body{
     font-family: 'Open Sans', sans-serif;
     background-color: #EAEAEA;
+    /* fix horizonal scrolling */
     position: relative;
     overflow-x: hidden;
 }
@@ -240,10 +241,13 @@ thead{
 
 .registry-amazon{
     margin-top: 25px;
+    max-height: 80px;
+    max-width: 250px;
 }
 .registry-zola{
     margin-top: auto;
-    max-width: 70%
+    max-height: 100px;
+    max-width: 212px;
 }
 
 .registry-button{
@@ -309,6 +313,7 @@ thead{
     }
     .registry-zola{
         margin-left: 30px;
+        max-width: 80%;
     }
     .registry-amazon{
         margin-left: 0px;
@@ -372,10 +377,13 @@ thead{
     .img-medium{
         max-width: 100%;
     }
-    .registry-zola{
-        max-width: 80%;
-    }
 }
+
+/* @media (min-width: 1350px){
+    .registry-zola{
+        max-width: 60%;
+    }
+} */
 
 /* ----------- iPad Pro ----------- */
 /* Portrait and Landscape */

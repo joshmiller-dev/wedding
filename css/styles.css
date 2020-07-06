@@ -312,6 +312,7 @@ thead{
         font-size: .8rem;
     }
     .registry-zola{
+        margin-left: 30px;
         max-width: 80%;
     }
     .registry-amazon{

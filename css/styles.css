@@ -188,6 +188,16 @@ thead{
     font-size: 1rem;
 }
 
+.back-button {
+    background-color: #E76F51;
+    padding: 15px;
+    border-radius: 50%;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    font-size: 1rem;
+}
+
 .fadeIn{
     opacity: 100%;
     transition: opacity 1s;
@@ -239,21 +249,26 @@ thead{
     text-align: center;
 }
 
-.registry-amazon{
+.registry-target{
     margin-top: 25px;
-    max-height: 80px;
-    max-width: 250px;
+    max-height: 60%;
+    max-width: 60%;
     object-fit: cover;
 }
 .registry-zola{
-    margin-top: auto;
-    max-height: 100px;
-    max-width: 212px;
+    margin: auto auto;
+    /* max-height: 100px;
+    max-width: 212px; */
+    max-height: 60%;
+    max-width: 60%;
     object-fit: cover;
 }
 
 .registry-button{
-    margin-top: 50px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* border: 1px solid black;
+    border-radius: 10px; */
 }
 
 .carousel-inner img{
@@ -269,6 +284,8 @@ thead{
 }
 
 .table-seating{
+    border: 1px solid #264653;
+    background-color: #EAEAEA;
     border-radius: 5px;
     transition: background-color 1s;
 }
@@ -278,14 +295,47 @@ thead{
     transition: background-color 1s;
 }
 
+.table-seating:active{
+    color: white;
+    /* transition: background-color 100ms; */
+}
 
-#our-story, #details, #dinner, #registry, #contact{
+.table-seating a{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+
+
+#about, #details, #dinner, #registry, #contact{
     padding-top: 50px;
     margin-top: -50px;
 }
 
+#logo{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 3rem;
+    color: #264653;
+    font-weight: normal;
+}
+
+/* #about{
+    margin-left: 0;
+}
+
+#contact{
+    margin-right: 0;
+} */
 
 
+/* bootstrap medium breakpoint */
+@media (max-width: 767px){
+    .registry-target{
+        margin-top: 0;
+
+    }    
+}
 
 /* smallest breakpoint for Bootstrap */
 @media (max-width: 575px) {
@@ -314,11 +364,9 @@ thead{
         font-size: .8rem;
     }
     .registry-zola{
-        margin-left: 30px;
         max-width: 80%;
     }
-    .registry-amazon{
-        margin-left: 0px;
+    .registry-target{
         max-width: 80%;
     }
     .navLink:hover{
@@ -330,6 +378,10 @@ thead{
     }
     #search-text{
         width: 80% !important;
+    }
+
+    .nav-button{
+        padding-bottom: 0;
     }
 }
 

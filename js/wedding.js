@@ -4,6 +4,7 @@ const carousel = document.querySelector(".carousel");
 const email = document.querySelectorAll(".email");
 const envelopeClosed = document.getElementById("closed");
 const envelopeOpen= document.getElementById("open");
+const zola = document.querySelector(".registry-zola");
 let sticky = navbar.offsetTop;
 
 window.onscroll = function() {
@@ -26,6 +27,11 @@ function stickyNav(){
         backToTop.classList.remove("fadeIn");
     }
 }
+
+//fixes zola logo  being weird on chrome unless refreshed
+setTimeout(function() {
+    zola.hide().show(0);
+}, 500);
 
 function resizeSticky(){
     navbar.classList.remove("fixed-top");

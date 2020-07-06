@@ -249,21 +249,19 @@ thead{
     margin-top: 25px;
     max-height: 60%;
     max-width: 60%;
-    object-fit: cover;
 }
 .registry-zola{
     margin: auto auto;
-    max-height: 60%;
-    max-width: 60%;
-    object-fit: cover;
+    max-height: 60% !important;
+    max-width: 60% !important;
 }
 
-.registry-button{
+/* .registry-button{
     margin-top: 1rem;
     margin-bottom: 1rem;
-    /* border: 1px solid black;
-    border-radius: 10px; */
-}
+    border: 1px solid black;
+    border-radius: 10px;
+} */
 
 .carousel-inner img{
     max-height: 30%;
@@ -377,6 +375,7 @@ thead{
         padding-bottom: 0;
     }
 }
+
 
 @media (min-width: 575px) {
     .navLink, .navLink:hover {

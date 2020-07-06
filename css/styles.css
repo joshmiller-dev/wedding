@@ -243,6 +243,7 @@ thead{
 }
 .registry-zola{
     margin-top: auto;
+    max-width: 70%
 }
 
 .registry-button{

@@ -243,11 +243,13 @@ thead{
     margin-top: 25px;
     max-height: 80px;
     max-width: 250px;
+    object-fit: cover;
 }
 .registry-zola{
     margin-top: auto;
     max-height: 100px;
     max-width: 212px;
+    object-fit: cover;
 }
 
 .registry-button{

@@ -372,6 +372,9 @@ thead{
     .img-medium{
         max-width: 100%;
     }
+    .registry-zola{
+        max-width: 80%;
+    }
 }
 
 /* ----------- iPad Pro ----------- */

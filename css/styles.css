@@ -192,14 +192,15 @@ thead{
 }
 
 .back-to-top {
+    display: none;
     background-color: #E76F51;
     padding: 10px;
     border-radius: 50%;
     position: fixed;
     bottom: 25px;
     right: 25px;
-    opacity: 0%;
-    transition: opacity 1s;
+    /* opacity: 0; */
+    transition: display 1s;
     font-size: 1rem;
 }
 
@@ -214,9 +215,9 @@ thead{
 }
 
 .fadeIn{
-    opacity: 100%;
-    transition: opacity 1s;
-    
+    display: block;
+    /* opacity: 100%; */
+    transition: display 1s;
 }
 
 

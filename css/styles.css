@@ -24,10 +24,12 @@ a:hover{
 }
 
 h1{
+    display: inline-block;
     margin-top: 50px;
     text-align: center;
-    font-size: 3rem;
+    font-size: 5rem;
     color: #264653;
+    font-family: 'Great Vibes', cursive;
 }
 
 h2{
@@ -47,7 +49,8 @@ p{
 h4{
     text-align: center;
     margin-bottom: 50px;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    font-weight: 300;
 }
 
 hr {
@@ -86,6 +89,18 @@ thead{
     background-color: #EAEAEA; 
     color: #264653;
 }
+
+
+.title-text{
+    text-align: center;
+}
+
+.img-gallery{
+    border-radius: 10px;
+    transition: transform .5s ease-in-out;
+}
+
+
 
 
 #search-text{
@@ -190,11 +205,11 @@ thead{
 
 .back-button {
     background-color: #E76F51;
-    padding: 15px;
+    padding: 10px;
     border-radius: 50%;
     position: fixed;
-    top: 15px;
-    left: 15px;
+    top: 25px;
+    left: 25px;
     font-size: 1rem;
 }
 
@@ -217,6 +232,8 @@ thead{
     color: #E76F51;
     transition: color, 1s;
 }
+
+
 
 .email, .email:hover{
     color: #264653;
@@ -246,7 +263,7 @@ thead{
 }
 
 .registry-target{
-    margin-top: 25px;
+    margin-top: 30px;
     max-height: 60%;
     max-width: 60%;
 }
@@ -324,11 +341,18 @@ thead{
 /* bootstrap medium breakpoint */
 @media (max-width: 767px){
     .registry-target{
-        margin-top: 0;
-    }    
+        margin-top: 20px;
+    }
 }
 
-/* smallest breakpoint for Bootstrap */
+/* large breakpoint */
+@media (min-width: 992px){
+    .img-gallery:hover{
+        transform: scale(1.1);
+    }
+}
+
+/* small breakpoint*/
 @media (max-width: 575px) {
     .fixed-top{
         position: relative;
@@ -418,6 +442,8 @@ thead{
     .nav-button{
         padding-bottom: .4rem;
     }
+
+
 }
 
 @media (max-width: 992px){
@@ -438,10 +464,7 @@ thead{
   and (min-width: 1024px) 
   and (max-height: 1366px) 
   and (-webkit-min-device-pixel-ratio: 1.5) {
-      h1{
-          font-size: 4rem;
-      }
-      h2{
+      /* h2{
           font-size: 3rem;
       }
       h4{
@@ -449,9 +472,6 @@ thead{
       }
       a{
           font-size: 1.2rem;
-      }
-      /* p{
-          font-size: 1.3rem;
       } */
       .back-to-top{
           padding: 15px;

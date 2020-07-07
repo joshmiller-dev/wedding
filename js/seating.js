@@ -1,16 +1,27 @@
 const table = document.getElementById("guestTable").getElementsByTagName("tbody")[0];
 const search = document.getElementById("search-text");
 const guestList = [
-    {   name: "A Test",             table: 0  },
-    {   name: "B Test",            table: 0  },
-    {   name: "C Test",               table: 0  },
-    {   name: "D Test",            table: 0  },
-    {   name: "E Test",               table: 0  },
-    {   name: "F Test",            table: 0  },
-    {   name: "G Test",               table: 0  },
-    {   name: "H Test",            table: 0  },
+    {   name: "Beverly Miller",             table: 0  },
+    {   name: "Kendall Miller",             table: 0  },
+    {   name: "Larry Miller",               table: 0  },
+    {   name: "Karen Miller",               table: 0  },
+    {   name: "Derek Miller",               table: 0  },
+    {   name: "Matthew Shively",            table: 0  },
 ];
 
+
+//sort the above list first
+guestList.sort(function(a, b){
+    let nameA = a.name.toLowerCase();
+    let nameB = b.name.toLowerCase();
+    if(nameA < nameB){
+        return -1;
+    }
+    if(nameA > nameB){
+        return 1;
+    }
+    return 0;
+});
 
 guestList.forEach( guest => {
     //create new row

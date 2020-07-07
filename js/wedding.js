@@ -33,6 +33,7 @@ setTimeout(function() {
     zola.hide().show(0);
 }, 500);
 
+
 function resizeSticky(){
     navbar.classList.remove("fixed-top");
     sticky = navbar.offsetTop;

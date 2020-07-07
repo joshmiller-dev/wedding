@@ -17,7 +17,7 @@ window.onresize = function() {
 
 
 function stickyNav(){
-    if(window.pageYOffset >= sticky){
+    if(window.pageYOffset >= sticky || document.body.scrollTop >= sticky){
         navbar.classList.add("fixed-top");
         navbar.classList.remove("container");
         backToTop.classList.add("fadeIn");
@@ -27,6 +27,7 @@ function stickyNav(){
         backToTop.classList.remove("fadeIn");
     }
 }
+
 
 //fixes zola logo  being weird on chrome unless refreshed
 setTimeout(function() {

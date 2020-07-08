@@ -1,2 +1,2 @@
 # wedding
-Site for our wedding this October.
+Site I made using boostrap to review knowledge for our wedding on October 10th 2020.

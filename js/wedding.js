@@ -4,7 +4,9 @@ const carousel = document.querySelector(".carousel");
 const email = document.querySelectorAll(".email");
 const envelopeClosed = document.getElementById("closed");
 const envelopeOpen= document.getElementById("open");
-const zola = document.querySelector(".registry-zola");
+const regLinks = document.querySelectorAll(".registry");
+const heart = document.querySelector(".fa-heart");
+// const zola = document.querySelector(".registry-zola");
 let sticky = navbar.offsetTop;
 
 window.onscroll = function() {
@@ -13,6 +15,17 @@ window.onscroll = function() {
 //this handles issues with sticky nav when resizing window
 window.onresize = function() {
     resizeSticky();
+}
+
+//increase heart size on hover of registry links
+for(let i = 0; i < regLinks.length; i++){
+    regLinks[i].addEventListener("mouseover", function(){
+        heart.classList.add("grow");
+    });
+
+    regLinks[i].addEventListener("mouseout", function(){
+        heart.classList.remove("grow");
+    });
 }
 
 
@@ -30,9 +43,9 @@ function stickyNav(){
 
 
 //fixes zola logo  being weird on chrome unless refreshed
-setTimeout(function() {
-    zola.hide().show(0);
-}, 500);
+// setTimeout(function() {
+//     zola.hide().show(0);
+// }, 500);
 
 
 function resizeSticky(){
@@ -40,6 +53,8 @@ function resizeSticky(){
     sticky = navbar.offsetTop;
     stickyNav();
 }
+
+
 
 for(var i = 0; i < email.length; i++){
     email[i].addEventListener("mouseover", function(){

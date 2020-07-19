@@ -133,6 +133,8 @@ li {
     color: inherit;
     text-decoration: inherit;
     text-align: center;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 
@@ -472,6 +474,10 @@ li {
     }
     .registry-target{
         max-width: 80%;
+    }
+    .navLink{
+        padding-left: 6rem;
+        padding-right: 6rem;
     }
     .navLink:hover{
         color: inherit;
